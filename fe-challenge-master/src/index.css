@@ -1,0 +1,8 @@
+body {
+    background: no-repeat center fixed url(./assets/background.png);
+}
+
+div {
+    width: auto;
+    background-color: red;
+}

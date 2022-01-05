@@ -1,8 +1,52 @@
+/* FONTS */
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+/* INDEX STYLING */
 body {
-    background: no-repeat center fixed url(./assets/background.png);
+    font-family: "Roboto", sans-serif, "Times New Roman";
+    background: no-repeat center url(./assets/images/background.png);
 }
 
 div {
+    background-color: rgba(255, 0, 0, 0.384);
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.logo {
+    font: bold 2.5em "Roboto", sans-serif;
+    color: #fff;
+}
+
+.center-item {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.right-item {
+    float: right;
+    margin-right: 10px;
+}
+
+.hero {
+    position: absolute;
     width: auto;
-    background-color: red;
+}
+
+.sign-up {
+    position: absolute;
+    width: auto;
+}
+
+.footer {
+    position: absolute;
+    width: auto;
 }

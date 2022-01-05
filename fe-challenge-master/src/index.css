@@ -7,6 +7,13 @@
 }
 
 /* INDEX STYLING */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif, "Times New Roman";
     font-weight: normal;
@@ -15,30 +22,29 @@ body {
     color: white;
 }
 
-div {
+div, a {
     background-color: rgba(255, 0, 0, 0.384);
 }
 
-.header {
+.menubar {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
 }
 
-.logo {
+.menu-item-left {
     font-family: "Roboto", sans-serif, "Times New Roman";
     font-weight: bold;
-    color: #fff;
-    margin: auto;
+    justify-content: flex-start;
 }
 
-.center-item-group {
+.menu-item-group {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
 }
 
-.center-item {
+.menu-item {
     margin: auto;
     width: 100%;
     text-align: center;

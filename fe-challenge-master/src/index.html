@@ -17,44 +17,72 @@
 
 <body>
 
-    <!-- MENUBAR -->
-    <div class="container menubar">
-        <a href="#" class="menu-item-logo">Stamp</a>
-        <div class="menu-item-group">
-            <a href="#" class="menu-item">About</a>
-            <a href="#" class="menu-item">Integrations</a>
-            <a href="#" class="menu-item">Pricing</a>
-            <a href="#" class="menu-item">Contacts</a>
-        </div>
-        <a href="#" class="menu-item-right">Menu</a>
-    </div>
+    <!-- BACKGROUND WITH MASK -->
+    <div class="background"></div>
+    <div class="mask"></div>
 
-    <!-- SHOWCASE & SIGN-UP -->
-    <div class="container">
+    <!-- VERTICAL FLEX CONTAINER -->
+    <div class="container-vertical">
 
-        <!-- SHOWCASE -->
-        <div class="showcase">
-            Simple Way to Organize Your Inspirations
-            <div class="subtitle">
-                I think what motivates people is not great hate,
-                but great love for other people.
+        <!-- MENUBAR -->
+        <div class="container menubar">
+            <a href="#" class="menu-item-logo">Stamp</a>
+            <div class="menu-item-group">
+                <a href="#" class="menu-item">About</a>
+                <a href="#" class="menu-item">Integrations</a>
+                <a href="#" class="menu-item">Pricing</a>
+                <a href="#" class="menu-item">Contacts</a>
             </div>
+            <a href="#" class="menu-item-right">Menu</a>
+        </div>
+
+        <!-- SHOWCASE & SIGN-UP -->
+        <div class="container container-mid">
+
+            <!-- SHOWCASE -->
+            <div class="showcase">
+                <span>Simple Way to Organize Your Inspirations</span>
+                <div class="subtitle">
+                    I think what motivates people is not great hate,
+                    but great love for other people.
+                </div>
+            </div>
+
+
+            <!-- SIGN UP -->
+            <div class="signup">
+                <span class="signup-title">SIGN UP FOR FREE</span>
+                <form action="#">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Name" name="name" required>
+
+                    <label for="email"></label>
+                    <input type="email" placeholder="E-mail" name="email" required>
+
+                    <label for="password"></label>
+                    <input type="password" placeholder="Password" name="password" required>
+
+                    <input type="button">Sign up ></input>
+                </form>
+
+                <p class="tc-text">By clicking "Sign up" I agree to our</p>
+                <a href="#" class="tc-link">Terms of Service.</a>
+            </div>
+
+
         </div>
 
 
-        <!-- SIGN UP -->
-        <div class="sign-up">Sign Up</div>
-    </div>
+        <!-- FOOTER -->
+        <div class="container">
+            <div class="footer">Footer</div>
 
-
-    <!-- FOOTER -->
-    <div class="container">
-        <div class="footer">Footer</div>
+        </div>
 
     </div>
 
-    <!-- Background Image -->
-    <img class="background-img" src="assets/images/background.png">
+
+
 
 </body>
 

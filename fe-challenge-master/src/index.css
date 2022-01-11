@@ -8,6 +8,7 @@
 /* 
     FONTS 
 */
+
 @font-face {
     font-family: "Roboto";
     src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
@@ -18,9 +19,15 @@
 @font-face {
     font-family: "Roboto";
     src: url(./assets/fonts/Roboto-Bold.ttf) format("truetype");
-    font-weight: bold;
-    font-style: normal;
+    font-weight: 900;
 }
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-Light.ttf) format("truetype");
+    font-weight: 100;
+}
+
 
 /*
     STYLING 
@@ -81,9 +88,8 @@ a {
     justify-content: center;
     align-items: center;
     height: 60%;
-    margin: auto 150px 200px;
-    /* margin: auto 150px; */
-    gap: 15%;
+    margin: auto 150px 150px;
+    gap: 10%;
     /* border: 2px solid blue; */
 }
 
@@ -132,28 +138,26 @@ a {
 
 /* SHOWCASE */
 .showcase {
-    /* background-color: rgba(255, 0, 0, 0.384); */
     font-weight: bold;
     font-size: 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    line-height: 115%;
     min-width: 465px;
+    max-width: 769px;
     height: 100%;
-    gap: 10px;
-}
-
-.showcase-header {
-    min-width: 430px;
-    max-width: 465px;
+    gap: 30px;
 }
 
 .subtitle {
-    font-weight: normal;
-    font-size: 18px;
-    min-width: 40%;
-    max-width: 60%;
+    font-weight: 100;
+    font-size: 22px;
+    min-width: 50%;
+    max-width: 70%;
+    margin-right: 10%;
+    line-height: 150%;
 }
 
 
@@ -166,8 +170,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 465px;
-    max-width: 465px;
+    min-width: 500px;
+    max-width: 550px;
     height: 100%;
     color: #fff;
     /* border: yellow 2px solid; */
@@ -175,15 +179,17 @@ a {
 
 .signup-title {
     font-size: 16px;
+    letter-spacing: 2px;
     margin-bottom: 16px;
     color: #f5f4f4;
 }
 
 .signup-form {
-    height: 40%;
+    height: 50%;
     min-height: 240px;
     width: 100%;
-    /* border-color: yellow; */
+    max-height: 310px;
+    /* border: 1px solid yellow; */
 }
 
 .signup-input {
@@ -198,23 +204,28 @@ a {
     padding-left: 20px;
 }
 
+.signup-input:focus {
+    font-weight: 900;
+    font-size: 110%;
+}
+
 .signup-inputgroup {
     height: 75%;
     width: 100%;
     border: 2px solid rgba(255, 255, 255, 0.30);
     border-bottom: none;
     border-radius: 5px 5px 0px 0px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.07);
 }
 
 .signup-button {
     font-size: 18px;
     height: 25%;
     width: 100%;
-    border: 2px solid #2C99ED;
+    border: 2px solid rgb(44, 153, 237);
     border-radius: 0px 0px 5px 5px;
     color: #fff;
-    background-color: #2C99ED;
+    background-color: rgb(44, 153, 237);
 }
 
 .signup button:hover {
@@ -224,8 +235,9 @@ a {
 
 .signup ::placeholder {
     font-family: "Roboto", sans-serif, "Times New Roman";
+    font-weight: 500;
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .tb-borders {
@@ -240,8 +252,9 @@ a {
     align-items: center;
     font-size: 14px;
     font-weight: normal;
-    color: #9B9B9B;
+    color: rgb(155, 155, 155);
     margin-top: 18px;
+    gap: 5px;
 }
 
 .tc a {
@@ -253,7 +266,21 @@ a {
 
 /* FOOTER */
 .footer {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 60px;
     width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.footer-copyright {
+    font-size: 14px
+}
+
+.footer-item-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
 }

@@ -2,7 +2,7 @@
     VARIABLES
 */
 :root {
-    --menubar-height: 100px;
+    --navbar-height: 100px;
 }
 
 /* 
@@ -73,7 +73,7 @@ a {
 .container {
     display: flex;
     margin: 0 5%;
-/*     border: 2px solid red; */
+    /* border: 2px solid red; */
 }
 
 .container-vertical {
@@ -93,35 +93,39 @@ a {
     /* border: 2px solid blue; */
 }
 
-/* MENUBAR */
-.menubar {
-    height: var(--menubar-height);
+/* NAVBAR */
+.navbar {
+    height: var(--navbar-height);
     justify-content: space-evenly;
     align-items: center;
 }
 
-.menubar a, .menubar a:link, .menubar a:visited {
+.navbar a, .navbar a:link, .navbar a:visited {
     color: #fff;
     text-decoration: none;
 }
 
-.menubar a, .menubar a:hover, .menubar a:active {
+.navbar a, .navbar a:hover, .navbar a:active {
     color: rgb(212, 209, 209)
 }
 
-.menu-item-logo {
+.nav-item-logo {
     font-weight: bold;
     font-size: 200%;
 }
 
-.menu-item-group {
+.nav-item-group {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
-.menu-item {
+.nav-item-group > li {
+    list-style: none;
+}
+
+.nav-item {
     margin: auto;
     width: 100%;
     padding: 0 1.5em;
@@ -129,8 +133,16 @@ a {
     font-size: 20px;
 }
 
-.menu-item-right {
+.nav-item-right {
+    width: auto;
+    height: 100%;
     font-size: 20px;
+}
+
+.menu-img {
+    width: 32px;
+    height: 32px;
+    margin: 120% auto;
 }
 
 
@@ -170,8 +182,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 500px;
-    max-width: 550px;
+    min-width: 465px;
+    max-width: 500px;
     height: 100%;
     color: #fff;
     /* border: yellow 2px solid; */
@@ -188,7 +200,7 @@ a {
     height: 50%;
     min-height: 240px;
     width: 100%;
-    max-height: 310px;
+    max-height: 210px;
     /* border: 1px solid yellow; */
 }
 
@@ -204,9 +216,8 @@ a {
     padding-left: 20px;
 }
 
-.signup-input:focus {
-    font-weight: 900;
-    font-size: 110%;
+.signup-input:focus::placeholder {
+    font-size: 105%;
 }
 
 .signup-inputgroup {
@@ -229,7 +240,7 @@ a {
 }
 
 .signup button:hover {
-    font-size: 16px;
+    font-size: 120%;
     cursor: pointer;
 }
 
@@ -283,4 +294,23 @@ a {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    letter-spacing: 1px;
+}
+
+
+/* 
+    MEDIA QUERIES 
+*/
+
+/* TABLETS & UNDER */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height: 200px;
+    }
 }

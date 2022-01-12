@@ -139,7 +139,6 @@ li {
 .nav-item-right {
     width: auto;
     height: 100%;
-    font-size: 20px;
 }
 
 .menu-img {
@@ -375,6 +374,10 @@ li {
         overflow: auto;
     }
 
+    .container-vertical {
+        gap: 125px;
+    }
+
     .container {
         margin: auto 0px;
         height: 100%;
@@ -384,12 +387,23 @@ li {
     .container-mid {
         align-items: center;
         margin: 0 auto;
-        gap: 15%;
-        /* border: 1px solid green; */
+        gap: 10%;
     }
     
     .navbar {
-        margin: 0;
+        margin: 0 auto;
+        height: 80px;
+        /* border: 1px solid green; */
+    }
+
+    .nav-item-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-img {
+        margin: 100% auto;
     }
 
     .showcase {
@@ -402,6 +416,7 @@ li {
     }
 
     .subtitle {
+        max-width: 100%;
         font-size: 20px;
     }
 
@@ -411,7 +426,7 @@ li {
     }
 
     .footer {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         height: 100%;
         width: 100%;
     }

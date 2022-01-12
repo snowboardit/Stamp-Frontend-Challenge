@@ -327,8 +327,7 @@ li {
 
     .navbar {
         gap: 60%;
-
-    }
+    }   
 
     .nav-item-group {
         display: none;
@@ -352,18 +351,52 @@ li {
         border: 1px solid green;
     }
 
+    .footer-item-group {
+        flex-direction: column;
+        font-size: 12px;
+        gap: 15px;
+        order: -1;
+        margin-bottom: 10%;
+    }
+
+    .footer-copyright {
+        padding-bottom: 25px;
+    }
 
 }
 
 @media (max-width: 500px) {
-    .navbar {
-        border: 1px solid blue;
 
+
+    .container {
+        /* border: 1px solid blue; */
     }
 
     .container-mid {
-        border: 1px solid red;
+        align-items: center;
+        /* border: 1px solid red; */
+        height: 200%;
+        max-width: none;
+        min-width: none;
+        margin: auto 15px;
+        gap: 15%
+    }
 
+    .navbar {
+        margin: 0;
+    }
+
+    .showcase {
+        font-size: 56px;
+        margin: auto auto;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .signup {
+        min-width: 320px;
     }
 
     .footer {

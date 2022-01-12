@@ -1,5 +1,8 @@
 # Front End Developer Challenge
 
+[CLICK HERE FOR LIVE VERSION](https://determined-dubinsky-7070bb.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c2ff6c1c-71a8-4362-bfe0-9ffb99400eb7/deploy-status)](https://app.netlify.com/sites/determined-dubinsky-7070bb/deploys)
+
 ![Desktop Preview](./design/desktop.png)
 
 ## Welcome! 👋

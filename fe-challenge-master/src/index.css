@@ -348,7 +348,7 @@ li {
 
     .footer {
         flex-direction: column;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
 
     .footer-item-group {
@@ -367,28 +367,52 @@ li {
 
 @media (max-width: 500px) {
 
+    * {
+        scrollbar-width: none;
+    }
+
+    body {
+        overflow: clip;
+    }
+
+    .background {
+        background: url(./assets/images/background-phone.png) fixed no-repeat cover center center;
+        background-color: rgb(10, 10, 10);
+        width: 100vw;
+        height: 100vh;
+        
+    }
+
+    .mask {
+        width: 100vw;
+        height: 100vh;
+    }
 
     .container {
-        /* border: 1px solid blue; */
+        margin: auto 15px;
+        height: 100vh;
+        width: 100vw;
     }
-
+    
     .container-mid {
         align-items: center;
-        /* border: 1px solid red; */
-        height: 200%;
-        max-width: none;
-        min-width: none;
-        margin: auto 15px;
-        gap: 15%
+        margin: 0 auto;
+        gap: 15%;
+        /* border: 1px solid green; */
     }
-
+    
     .navbar {
         margin: 0;
     }
 
     .showcase {
         font-size: 56px;
-        margin: auto auto;
+        margin: auto 0;
+        padding: 15px;
+        width: 100%;
+        /* padding: 15px; */
+        min-width: 320px;
+        border: 1px solid yellow;
     }
 
     .subtitle {
@@ -397,10 +421,11 @@ li {
 
     .signup {
         min-width: 320px;
+        padding: 15px;
     }
 
     .footer {
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
 
 }

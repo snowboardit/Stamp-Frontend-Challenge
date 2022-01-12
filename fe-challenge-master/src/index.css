@@ -368,30 +368,17 @@ li {
 @media (max-width: 500px) {
 
     * {
-        scrollbar-width: none;
-    }
-
-    body {
-        overflow: clip;
+        scrollbar-width: thin;
     }
 
     .background {
-        background: url(./assets/images/background-phone.png) fixed no-repeat cover center center;
-        background-color: rgb(10, 10, 10);
-        width: 100vw;
-        height: 100vh;
-        
-    }
-
-    .mask {
-        width: 100vw;
-        height: 100vh;
+        overflow: auto;
     }
 
     .container {
-        margin: auto 15px;
-        height: 100vh;
-        width: 100vw;
+        margin: auto 0px;
+        height: 100%;
+        width: 100%;
     }
     
     .container-mid {
@@ -412,7 +399,6 @@ li {
         width: 100%;
         /* padding: 15px; */
         min-width: 320px;
-        border: 1px solid yellow;
     }
 
     .subtitle {
@@ -425,7 +411,9 @@ li {
     }
 
     .footer {
-        /* border: 1px solid green; */
+        border: 1px solid green;
+        height: 100%;
+        width: 100%;
     }
 
 }

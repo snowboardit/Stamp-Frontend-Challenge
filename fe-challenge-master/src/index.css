@@ -99,20 +99,16 @@ li {
     /* border: 2px solid blue; */
 }
 
+
+
+
 /* NAVBAR */
 .navbar {
     height: var(--navbar-height);
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid blue; */
-}
-
-.navbar-vertical {
-    flex-direction: column;
-    visibility: visible;
-    border: 1px solid blue;
-    height: 100%;
     z-index: 1;
+    /* border: 1px solid blue; */
 }
 
 .navbar a, .navbar a:link, .navbar a:visited {
@@ -185,7 +181,6 @@ li {
     margin-right: 10%;
     line-height: 150%;
 }
-
 
 
 
@@ -312,24 +307,54 @@ li {
 }
 
 
+
+
 /* MENU */
 .menu {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    visibility: hidden;
     height: 100vh;
     width: 100vw;
-    background: rgba(173, 173, 173, 0.75);
-    /* transition: 500ms fade-in;
-    transition-property: background; */
+    visibility: visible;
+    font-size: 36px;
+    background: rgba(75, 75, 75, 0.75);
+    /* border: 1px solid blue; */
 }
+
+.menu-item-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 50px;
+    /* border: 1px solid yellow; */
+}
+
+.menu-item {
+    width: 100%;
+    letter-spacing: 1px;
+    /* border: 1px solid red; */
+}
+
+.menu a, .menu a:link, .menu a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a, .menu a:hover, .menu a:active {
+    color: rgb(212, 209, 209)
+}
+
+
 
 /* 
     MEDIA QUERIES
 */
 
-/* TABLETS & UNDER */
+/* TABLETS & SMALL SCREENS */
 @media (max-width: 1024px) {
 
     .background {
@@ -382,6 +407,7 @@ li {
 
 }
 
+/* SMARTPHONES */
 @media (max-width: 500px) {
 
     * {

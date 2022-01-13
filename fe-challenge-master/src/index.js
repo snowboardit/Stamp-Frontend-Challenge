@@ -1,50 +1,31 @@
-const menu = document.querySelector('.menu');
-const menu_button = document.querySelector('.menu-img');
+const container_mid = document.querySelector('.container-mid');
+const footer = document.querySelector('.footer');
 const navbar = document.querySelector('.navbar')
 const navbar_itemgroup = document.querySelector('.nav-item-group');
-const content = document.querySelector('.container-vertical');
-
-// Set menu visibility state state
-// menu.style.visibility = 'hidden';
+const showcase = document.querySelector('.showcase');
+const signup = document.querySelector('.signup');
+const menu_itemgroup = document.querySelector('.menu-item-group')
+const menu = document.querySelector('.menu');
 
 const menuClickHandler = () => {
 
-    // console.log(menu.style.visibility);
+    console.log('clicked');
 
-    // If menu is hidden, show it - otherwise, hide it
-    if (menu.style.visibility === 'hidden') {
+    // OVERVIEW: If menu is hidden, show it; else if menu is shown, hide it
+    // Show/hide content and scroll bar
+    container_mid.classList.toggle('container-mid-toggle');
+    showcase.classList.toggle('showcase-toggle');
+    signup.classList.toggle('signup-toggle');
+    footer.classList.toggle('footer-toggle');
+    menu_itemgroup.classList.toggle('menu-item-group-toggle');
 
-        // Hide content
-        content.style.visibility = 'collapse';
-        content.style.overflow = 'hidden';
+    // Bring navbar to front/place behind main content
+    navbar.classList.toggle('navbar-toggle');
 
-        // Show the menu
-        menu.style.visibility = 'visible';
+    // Show/hide navbar item group for larger screens
+    navbar_itemgroup.classList.toggle('nav-item-group-toggle');
 
-        // Bring navbar to front and style for vertical viewing
-        navbar.style.zIndex = '2';
-        navbar.style.visibility = 'visible';
+    // Show/hide the menu
+    menu.classList.toggle('menu-toggle');
 
-        // Hide navbar item group for larger screens
-        navbar_itemgroup.style.visibility = 'hidden';
-
-    } else {
-
-        // Show content
-        content.style.visibility = 'visible';
-        content.style.overflow = 'auto';
-
-        // Hide menu
-        menu.style.visibility = 'hidden';
-
-        // Revert navbar back to original state
-        navbar.classList.remove('navbar-vertical');
-        navbar.style.paddingRight = '0';
-
-        // Show navbar item group
-        navbar_itemgroup.style.visibility = 'visible';
-
-    }
 };
-
-console.log(content);   

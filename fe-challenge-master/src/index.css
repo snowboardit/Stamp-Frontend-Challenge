@@ -3,12 +3,15 @@
 */
 :root {
     --navbar-height: 100px;
-    --mid-opacity-transition: opacity 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    --hover-color: rgba(212, 209, 209, 0.9);
+    --mid-opacity-transition: opacity 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     --menu-opacity-transition: opacity 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     --menu-itemgroup-opacity-transition: opacity 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     --mid-transform-transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     --menu-transform-transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     --menu-itemgroup-transform-transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --navbar-item-fill-transition: fill 100ms linear;
+    --navbar-item-color-transition: color 100ms linear;
 }
 
 
@@ -136,16 +139,32 @@ li {
 
 .navbar-toggle {
     opacity: 100;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.navbar a, .navbar a:link, .navbar a:visited {
+.navbar a, 
+.navbar a:link, 
+.navbar a:visited {
     color: #fff;
     text-decoration: none;
+    transition: var(--navbar-item-color-transition);
 }
 
-.navbar a, .navbar a:hover, .navbar a:active {
-    color: rgb(212, 209, 209)
+.navbar a:hover, 
+.navbar a:active {
+    color: var(--hover-color);
+}
+
+.navbar svg, 
+.navbar svg:link, 
+.navbar svg:visited {
+    fill: #fff;
+    transition: var(--navbar-item-fill-transition);
+}
+
+.navbar svg:hover, 
+.navbar svg:active {
+    fill: var(--hover-color);
 }
 
 .nav-item-logo {
@@ -178,11 +197,12 @@ li {
     height: 100%;
 }
 
-.menu-img {
+.menu-icon {
     width: 32px;
     height: 32px;
-    margin: 120% auto;
+    margin: 100% auto;
 }
+
 
 
 
@@ -404,13 +424,18 @@ li {
     /* border: 1px solid red; */
 }
 
-.menu a, .menu a:link, .menu a:visited {
+.menu a, 
+.menu a:link, 
+.menu a:visited {
     color: #fff;
     text-decoration: none;
+    transition: var(--navbar-item-color-transition);
 }
 
-.menu a, .menu a:hover, .menu a:active {
-    color: rgb(212, 209, 209)
+.menu a, 
+.menu a:hover, 
+.menu a:active {
+    color: var(--hover-color);
 }
 
 
@@ -511,7 +536,7 @@ li {
         align-items: center;
     }
 
-    .menu-img {
+    .menu-icon {
         margin: 100% auto;
     }
 

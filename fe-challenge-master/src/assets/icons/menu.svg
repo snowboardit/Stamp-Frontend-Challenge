@@ -1,7 +1,7 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="menu">
-<rect id="rect-bottom" y="23" width="32" height="4" rx="2" fill="white"/>
-<rect id="rect-middle" y="14" width="32" height="4" rx="2" fill="white"/>
-<rect id="rect-top" y="5" width="32" height="4" rx="2" fill="white"/>
-</g>
+<svg id="menu" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <g id="menu">
+        <rect id="rect-top" y="5" width="32" height="4" rx="2"/>
+        <rect id="rect-middle" y="14" width="32" height="4" rx="2"/>
+        <rect id="rect-bottom" y="23" width="32" height="4" rx="2"/>
+    </g>
 </svg>

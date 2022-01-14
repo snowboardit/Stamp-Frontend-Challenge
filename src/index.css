@@ -45,7 +45,7 @@
     STYLING 
 */
 
-/* LAYERS:
+/* LAYERS (no menu):
     1: Navbar 
     auto/0: Main content
     -1: Mask
@@ -98,7 +98,6 @@ li {
 .container {
     display: flex;
     margin: 0 5%;
-    /* border: 2px solid red; */
 }
 
 .container-vertical {
@@ -251,7 +250,6 @@ li {
     color: #fff;
     transition: var(--mid-transform-transition),
         var(--mid-opacity-transition);
-    /* border: yellow 2px solid; */
 }
 
 .signup-toggle {
@@ -271,7 +269,6 @@ li {
     min-height: 240px;
     width: 100%;
     max-height: 210px;
-    /* border: 1px solid yellow; */
 }
 
 .signup-input {
@@ -354,7 +351,6 @@ li {
     align-items: center;
     height: 60px;
     width: 100%;
-    /* border: 1px solid blue; */
 }
 
 .footer-toggle {
@@ -391,7 +387,6 @@ li {
     background: rgba(75, 75, 75, 0.75);
     transition: var(--menu-opacity-transition);
     z-index: -1;
-    /* border: 1px solid blue; */
 }
 
 .menu-toggle {
@@ -410,7 +405,6 @@ li {
         var(--menu-itemgroup-opacity-transition);
     transform: scale(1.25);
     opacity: 0;
-    /* border: 1px solid red; */
 }
 
 .menu-item-group-toggle {
@@ -421,7 +415,6 @@ li {
 .menu-item {
     width: 100%;
     letter-spacing: 1px;
-    /* border: 1px solid red; */
 }
 
 .menu a,
@@ -477,12 +470,10 @@ li {
 
     .showcase {
         justify-content: center;
-        /* border: 1px solid orange; */
     }
 
     .footer {
         flex-direction: column;
-        /* border: 1px solid green; */
     }
 
     .footer-item-group {
@@ -528,7 +519,6 @@ li {
     .navbar {
         margin: 0 auto;
         height: 80px;
-        /* border: 1px solid green; */
     }
 
     .nav-item-right {
@@ -546,7 +536,6 @@ li {
         margin: auto 0;
         padding: 15px;
         width: 100%;
-        /* padding: 15px; */
         min-width: 320px;
     }
 
@@ -561,7 +550,6 @@ li {
     }
 
     .footer {
-        /* border: 1px solid green; */
         height: 100%;
         width: 100%;
     }

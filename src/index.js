@@ -22,7 +22,7 @@ const menuClickHandler = () => {
     menu_itemgroup.classList.toggle('menu-item-group-toggle');
 
     // Enable/disable scroll on body for devices < 500px
-    body.classList.toggle('scroll-disabled');
+    body.classList.toggle('disable-scroll');
 
     // Bring navbar to front/place behind main content
     navbar.classList.toggle('navbar-toggle');

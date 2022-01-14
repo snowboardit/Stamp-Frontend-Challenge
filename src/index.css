@@ -77,7 +77,7 @@ li {
 .background {
     position: fixed;
     height: 125vh;
-    width: 100vw;
+    width: 125vw;
     background-image: url(./assets/images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -449,6 +449,16 @@ li {
 
     .background {
         background-attachment: scroll;
+
+        /* position: fixed;
+        height: 125vh;
+        width: 100vw;
+        background-image: url(./assets/images/background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-color: rgb(10, 10, 10);
+        z-index: -2; */
     }
 
     .container {
@@ -459,8 +469,10 @@ li {
         gap: 30%;
     }
 
-    .scroll-disabled {
-        overflow: hidden;
+    .container-mid {
+        flex-direction: column;
+        margin: auto 25%;
+        gap: 20%;
     }
 
     .navbar {
@@ -472,10 +484,6 @@ li {
         visibility: hidden;
     }
 
-    .container-mid {
-        flex-direction: column;
-        margin: auto 25%;
-    }
 
     .showcase {
         justify-content: center;
@@ -504,14 +512,6 @@ li {
 
 /* SMARTPHONES */
 @media (max-width: 500px) {
-
-    * {
-        scrollbar-width: thin;
-    }
-
-    .mask {
-        position: fixed;
-    }
 
     .background {
         height: 100vh;
@@ -575,5 +575,10 @@ li {
     }
 
 
+}
 
+/* UTILITY CLASS */
+
+.disable-scroll {
+    overflow: hidden;
 }

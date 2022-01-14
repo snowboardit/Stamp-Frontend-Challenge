@@ -449,8 +449,7 @@ li {
 @media (max-width: 1024px) {
 
     .background {
-        height: 125vh;
-        background-attachment: fixed;
+        background-size: cover;
     }
 
     .container {
@@ -512,7 +511,7 @@ li {
     }
 
     .background {
-        height: 125vh;
+        height: 100vh;
         overflow: hidden;
     }
 

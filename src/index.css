@@ -447,12 +447,20 @@ li {
 /* TABLETS & SMALL SCREENS */
 @media (max-width: 1024px) {
 
+    .background {
+        background-attachment: scroll;
+    }
+
     .container {
         margin: 0 3%;
     }
 
     .container-vertical {
         gap: 30%;
+    }
+
+    .scroll-disabled {
+        overflow: hidden;
     }
 
     .navbar {
@@ -507,20 +515,6 @@ li {
 
     .background {
         height: 100vh;
-        background-attachment: scroll;
-
-        /* .background {
-        position: fixed;
-        height: 125vh;
-        width: 100vw;
-        background-image: url(./assets/images/background.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-color: rgb(10, 10, 10);
-        z-index: -2;
-    } */
     }
 
     .container-vertical {
@@ -537,10 +531,6 @@ li {
         align-items: center;
         margin: 0 auto;
         gap: 10%;
-    }
-
-    .scroll-disabled {
-        overflow: hidden;
     }
 
     .navbar {

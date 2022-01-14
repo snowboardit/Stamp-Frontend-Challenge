@@ -1,3 +1,5 @@
+const body = document.body
+const container_vert = document.querySelector('.container-vertical');
 const container_mid = document.querySelector('.container-mid');
 const footer = document.querySelector('.footer');
 const navbar = document.querySelector('.navbar')
@@ -18,6 +20,9 @@ const menuClickHandler = () => {
     signup.classList.toggle('signup-toggle');
     footer.classList.toggle('footer-toggle');
     menu_itemgroup.classList.toggle('menu-item-group-toggle');
+
+    // Enable/disable scroll on body for devices < 500px
+    body.classList.toggle('scroll-disabled');
 
     // Bring navbar to front/place behind main content
     navbar.classList.toggle('navbar-toggle');

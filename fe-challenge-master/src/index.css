@@ -16,8 +16,6 @@
 
 
 
-                
-
 
 /* 
     FONTS 
@@ -309,6 +307,7 @@ li {
     border-radius: 0px 0px 5px 5px;
     color: #fff;
     background-color: rgb(44, 153, 237);
+    transition: font-size 100ms linear;
 }
 
 .signup button:hover {
@@ -321,6 +320,7 @@ li {
     font-weight: 500;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.70);
+    transition: font-size 100ms linear;
 }
 
 .tb-borders {

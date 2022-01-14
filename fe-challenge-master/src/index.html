@@ -1,0 +1,187 @@
+<!-- 
+    CREATED BY MAX LAREAU
+    https://github.com/snowboardit
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!-- TITLE -->
+    <title>Stamp</title>
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND IMG -->
+    <div class="background"></div>
+
+    <!-- MENU -->
+    <div class="menu">
+        <ul class="menu-item-group">
+            <li>
+                <a href="#" class="menu-item">About</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Integrations</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Pricing</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Contacts</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MASK -->
+    <div class="mask"></div>
+
+    <!---- MAIN CONTENT ---->
+
+    <!-- VERTICAL FLEX CONTAINER -->
+    <main class="container-vertical">
+
+        <!-- NAVBAR -->
+        <nav class="container navbar">
+
+            <!-- LOGO -->
+            <a href="#" class="nav-item-logo">
+                Stamp
+            </a>
+
+            <!-- LINKS -->
+            <ul class="nav-item-group">
+                <li>
+                    <a href="#" class="nav-item">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Integrations</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Pricing</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Contacts</a>
+                </li>
+            </ul>
+
+            <!-- MENU BUTTON -->
+            <a href="#" class="nav-item-right">
+                <svg class="menu-icon" onclick="menuClickHandler()" width=" 32" height="32" viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect id="rect-top" y="5" width="32" height="4" rx="2" />
+                    <rect id="rect-middle" y="14" width="32" height="4" rx="2" />
+                    <rect id="rect-bottom" y="23" width="32" height="4" rx="2" />
+                </svg>
+            </a>
+
+        </nav>
+
+        <!-- SHOWCASE & SIGN-UP CONTAINER -->
+        <section class="container container-mid">
+
+            <!-- SHOWCASE -->
+            <div class="showcase">
+
+                <span>Simple Way to Organize Your Inspirations</span>
+
+                <!-- SUBTITLE -->
+                <div class="subtitle">
+                    I think what motivates people is not great hate,
+                    but great love for other people.
+
+                </div>
+
+            </div>
+
+
+            <!-- SIGN UP -->
+            <div class="signup">
+
+                <!-- TITLE -->
+                <span class="signup-title">SIGN UP FOR FREE</span>
+
+                <!-- FORM -->
+                <form class="signup-form" action="#">
+
+                    <div class="signup-inputgroup">
+
+                        <label for="name"></label>
+                        <input type="text" class="signup-input" placeholder="Name" name="name" required>
+
+                        <label for="email"></label>
+                        <input type="email" class="signup-input tb-borders" placeholder="E-mail" name="email" required>
+
+                        <label for="password"></label>
+                        <input type="password" class="signup-input" placeholder="Password" name="password" required>
+
+                    </div>
+
+                    <button class="signup-button" type="submit">Sign up &#62;</button>
+
+                </form>
+
+                <!-- TERMS & CONDITIONS -->
+                <div class="tc">
+
+                    <p>By clicking "Sign up" I agree to our</p>
+                    <a href="#">Terms of Service.</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <section class="container">
+
+            <nav class="footer">
+
+                <!-- COPYRIGHT -->
+                <p class="footer-copyright">&copy; 2016 Stamp. All Rights Reserved</p>
+
+                <!-- FOOTER LINKS -->
+                <ul class="footer-item-group">
+
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#">HELP</a>
+                    </li>
+                    <li>
+                        <a href="#">TERMS OF USE</a>
+                    </li>
+                    <li>
+                        <a href="#">PRIVACY POLICY</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="index.js" defer></script>
+
+</body>
+
+</html>

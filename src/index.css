@@ -449,16 +449,6 @@ li {
 
     .background {
         background-attachment: scroll;
-
-        /* position: fixed;
-        height: 125vh;
-        width: 100vw;
-        background-image: url(./assets/images/background.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-color: rgb(10, 10, 10);
-        z-index: -2; */
     }
 
     .container {
@@ -514,6 +504,8 @@ li {
 @media (max-width: 500px) {
 
     .background {
+        background: url(assets/images/background-phone.png);
+        background-position: center center;
         height: 100vh;
     }
 

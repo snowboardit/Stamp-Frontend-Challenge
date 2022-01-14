@@ -76,7 +76,7 @@ li {
 
 .background {
     position: fixed;
-    height: 100vh;
+    height: 125vh;
     width: 100vw;
     background-image: url(./assets/images/background.png);
     background-size: cover;
